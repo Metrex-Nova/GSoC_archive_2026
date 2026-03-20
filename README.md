@@ -1,2 +1,73 @@
-# GSoC_archive_2026
-Accepted GSoC 2026 proposals archive for reference and inspiration from the community.
+<p align="center">
+    <img src="https://github.com/Rishabh04-02/The-Beginners-Guide-to-Google-Summer-of-Code-GSoC/blob/master/gsoclogo.svg">    
+</p>
+
+### <p align="center"> ⭐ Star this repo to bookmark it for future reference! ⭐ </p>
+
+## Please note that
+The 2025 proposals can be found on the repo [SammanSarkar/GSoC_archive_2025](https://github.com) and for proposals from 2024 and earlier years you can access here [Aritra8438/GSoC_archive](https://github.com)
+
+## Folder Structure
+
+```
+|-Organisation Name
+    |-Accepted
+        |-sub-org-name(if any)_project-topic_user-name.pdf
+    |-Rejected
+        |-sub-org-name(if any)_project-topic_user-name.pdf
+```
+
+## Contributing a Proposal
+
+1. **Fork this repository** using the "Fork" button at the top right.
+2. **Clone your fork** to your local machine:
+
+   ```
+   git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
+   ```
+
+3. **Navigate to the repository**:
+
+   ```
+   cd GSoC_archive_2026
+   ```
+
+4. **Add the upstream repository**:
+
+   ```
+   git remote add upstream https://github.com/satwiksps/GSoC_archive_2026.git
+   ```
+
+5. **Sync your fork** with the main repository:
+
+   ```
+   git pull upstream main --rebase
+   ```
+
+6. **Create a new branch** for your changes:
+
+   ```
+   git checkout -b add-proposal-<org_name>
+   ```
+
+7. **Add your proposal**:
+   - Create a folder named after the organization if it doesn't exist.
+   - Create Accepted/Rejected folder.
+   - Place your proposal PDF inside this folder.
+
+8. **Commit and push your changes**:
+
+   ```
+   git add .
+   git commit -m "Add proposal for <org_name>"
+   git push origin add-proposal-<org_name>
+   ```
+
+9. **Create a pull request**:
+   - Go to your forked repository on GitHub.
+   - Click the "Compare & pull request" button for your branch.
+   - Submit the pull request.
+
+## Contributors
+<!-- CONTRIBUTORS_START -->
+<!-- CONTRIBUTORS_END -->
