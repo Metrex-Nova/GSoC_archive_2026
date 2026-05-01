@@ -1,7 +1,7 @@
 name: Add Contributor to README
 
 on:
-  pull_request:
+  pull_request_target:
     types:
       - closed
 
@@ -22,19 +22,14 @@ jobs:
           PROFILE_URL="https://github.com/$USERNAME"
           AVATAR_URL="https://github.com/$USERNAME.png"
           
-          # Create an HTML image link for the contributor
           LINK_MD="<a href=\"$PROFILE_URL\"><img src=\"$AVATAR_URL\" width=\"50px\" alt=\"$USERNAME\" /></a>"
           
-          # Check if the user is already in the README
           if ! grep -q "href=\"$PROFILE_URL\"" README.md; then
-            # Insert the profile pic right before the <!-- CONTRIBUTORS_END --> marker
             sed -i "/<!-- CONTRIBUTORS_END -->/i $LINK_MD" README.md
             
-            # Configure git identity
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
             
-            # Commit and push the changes
             git add README.md
             git commit -m "docs: add $USERNAME to contributors in README"
             git push
